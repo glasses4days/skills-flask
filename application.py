@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
-import jinja2
 
 app = Flask(__name__)
 
-app.jinja_env.undefined = jinja2.StrictUndefined
 
 @app.route("/")
 def index_page():
@@ -31,10 +29,10 @@ def application_submit():
     salary = request.form.get("salary")
     job = request.form.get("job")
 
-    return render_template("/application-response.html",
+    return render_template("application-response.html", 
                             firstname=firstname,
-                            lastname=lastname,
-                            salary=salary,
+                            lastname=lastname, 
+                            salary=salary, 
                             job=job)
 
 if __name__ == "__main__":

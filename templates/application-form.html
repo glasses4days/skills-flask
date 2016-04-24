@@ -5,22 +5,22 @@
 {% block body %}
 
     <h1>Job Application</h1>
-    <p class="instruction">Thanks for your interest in our company. Please submit the information below
-        to begin your application.</p>
+    <p class="instruction">Thanks for your interest in our company. Please submit the information below to begin your application.</p>
     <form action="/application" method="POST">
-        <label for="firstname">First name:</label>
-        <input type="text" name="firstname" class="yellow"><br>
-        <label for="lastname">Last name:</label>
-        <input type="text" name="lastname" class="yellow bold"><br>
-        <label for="salary">Salary requirement:</label>
-        <input type="number" name="salary" class="yellow"><br>
-        <fieldset>
-        <legend>Job:</legend>
+        <label for="firstname">First name:
+        <input type="text" name="firstname" class="yellow">
+        </label><br>
+        <label for="lastname">Last name:
+        <input type="text" name="lastname" class="yellow bold">
+        </label><br>
+        <label for="salary">Salary requirement:
+        <input type="number" name="salary" class="yellow">
+        </label><br>
+        <label for="jobtitle">Job:
         <input type="radio" name="job" value="Software Engineer">Software Engineer 
         <input type="radio" name="job" value="QA Engineer">QA Engineer
-        <input type="radio" name="job" value="Product Manager">Product Manager<br>
-        </fieldset><br>
-        <input type="submit" value="I'm ready for a job!" class="yellow" id="submit">
+        <input type="radio" name="job" value="Product Manager">Product Manager
+        </label><br>
+        <input type="submit" value="I'm ready for a job!" class="yellow">
     </form>
-
-{% endblock %}
+ {% endblock %}

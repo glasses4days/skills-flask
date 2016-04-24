@@ -1,1 +1,13 @@
-/* Your styles can go here. */
+.yellow {
+    background-color: #FFDE0D;
+    border-radius: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.instruction {
+    border: 2px solid #400563;
+    padding: 5px;
+}
